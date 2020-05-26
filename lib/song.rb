@@ -8,7 +8,7 @@ class Song
     end
 
   def initialize(name)
-    @name = name
+    @name = params.fetch(:name, 'green')
     @artist = []
   end
 
